@@ -51,6 +51,11 @@
 将本目录作为自定义 Skill 指向你的 Claude Code 或同等能力的 AI Agent 系统。
 使用时可直接下达类似于：“帮我写一个工作汇报的推介，要有包含三项数据对比的毛玻璃卡片排版，用深色背景，直接生成 PDF。”的指令。
 
-## 📄 授权协议
+## 📄 授权协议与致谢
 
 MIT License
+
+### 💖 特别鸣谢 (Credits)
+本增强级仓库（Pro 版）基于灵感和基础架构进行二次深度开发与中文化重构，特此感谢原作者与原工程奠定的坚实基础：
+- **Original Project**: [marp-skills](https://github.com/ryo-touch/marp-skills) by **[@ryo-touch](https://github.com/ryo-touch)**. 
+- *Thank you for providing the original brilliant skills architecture for Claude Code!*
