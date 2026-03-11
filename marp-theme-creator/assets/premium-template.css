@@ -1,0 +1,179 @@
+/* @theme premium */
+
+@import 'default';
+
+:root {
+  --color-canvas: #f8fafc;
+  --color-text: #334155;
+  --color-heading: #0f172a;
+  --color-primary: #3b82f6;
+  --color-primary-dark: #2563eb;
+  --color-secondary: #8b5cf6;
+}
+
+section {
+  background-color: var(--color-canvas);
+  color: var(--color-text);
+  font-family: 'Inter', 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 32px;
+  padding: 60px 80px;
+  background-image: 
+    radial-gradient(circle at 100% 0%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 0% 100%, rgba(139, 92, 246, 0.08) 0%, transparent 50%);
+}
+
+h1, h2, h3 {
+  color: var(--color-heading);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.6em;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+h2::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(59, 130, 246, 0.2), transparent);
+  margin-left: 10px;
+}
+
+li {
+  margin-bottom: 0.6em;
+  line-height: 1.5;
+}
+
+strong {
+  color: var(--color-heading);
+  font-weight: 700;
+}
+
+code {
+  background: #f1f5f9;
+  color: #e11d48;
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+  font-size: 0.85em;
+}
+
+pre {
+  background: #0f172a !important;
+  color: #f8fafc;
+  border-radius: 16px;
+  padding: 1.5em;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+blockquote {
+  border-left: 6px solid var(--color-primary);
+  background: rgba(59, 130, 246, 0.06);
+  padding: 1.5em;
+  border-radius: 0 12px 12px 0;
+  margin: 1.5em 0;
+  font-style: normal;
+  color: #475569;
+}
+
+figure {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+/* Hero / Cover slide */
+section.lead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle at center, #1e293b 0%, #020617 100%);
+  color: rgba(255,255,255,0.8);
+}
+
+section.lead h1 {
+  background: none;
+  -webkit-text-fill-color: #f8fafc;
+  color: #f8fafc;
+  font-size: 3.5em;
+  text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  margin-bottom: 0.2em;
+}
+
+section.lead p {
+  color: #94a3b8;
+  font-size: 1.2em;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+section.lead strong {
+  color: #38bdf8;
+}
+
+/* Dark mode invert */
+section.invert {
+  background-color: #0f172a;
+  color: #cbd5e1;
+  background-image: 
+    radial-gradient(circle at 100% 0%, rgba(56, 189, 248, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 0% 100%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+}
+
+section.invert h1 {
+  background: linear-gradient(135deg, #38bdf8, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section.invert h2, section.invert strong {
+  color: #f8fafc;
+}
+
+section.invert h2::after {
+  background: linear-gradient(90deg, rgba(56, 189, 248, 0.2), transparent);
+}
+
+section.invert blockquote {
+  background: rgba(56, 189, 248, 0.05);
+  color: #e2e8f0;
+}
+
+/* Modern Layout Utilities */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  padding: 2em;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+section.invert .glass {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
